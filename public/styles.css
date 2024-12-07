@@ -1,0 +1,79 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+  background-color: antiquewhite;
+}
+
+
+
+
+
+.home-section .home-content{
+  position: relative;
+  padding-top: 104px;
+}
+.home-content .overview-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 26px;
+}
+
+
+
+
+
+
+
+
+/* left box */
+.home-content .sales-boxes .recent-sales{
+  width: 98%;
+  background: #152259;
+  padding: 20px 30px;
+  margin: 0 7px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+ 
+ 
+}
+.home-content .sales-boxes .sales-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  
+}
+.sales-boxes .box .title{
+  font-size: 24px;
+  font-weight: 500;
+  border:2px solid #f3f3f3;
+  /* margin-bottom: 10px; */
+}
+.sales-boxes .sales-details li.topic{
+  font-size: 20px;
+  font-weight: 500;
+ 
+}
+.sales-boxes .sales-details li{
+  list-style: none;
+  margin: 8px 0;
+ 
+}
+.sales-boxes .sales-details li a{
+  font-size: 18px;
+  color: #f3f3f3;
+  font-size: 400;
+  text-decoration: none;
+}
+
+

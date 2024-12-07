@@ -1,0 +1,288 @@
+.app-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 300px;
+    /* Other styling for sidebar */
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.closed {
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .home-section {
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+    /* Other styling for home-section */
+  }
+  
+  /* Additional styling as needed */
+  .app-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 300px; /* Adjust width as needed */
+    background-color: #152259; /* Background color of the sidebar */
+    height: 130vh; /* Full height */
+    transition: width 0.3s ease; /* Smooth transition for opening/closing */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .sidebar.closed {
+    width: 0; /* Hide sidebar */
+  }
+  .btn3{
+    border: #152259;
+    background-color: #152259;
+    color: #f2f2f2;
+  }
+  
+  /* Logo and link styling */
+  .logo-details {
+    padding-top: 20px;
+    padding: 20px;
+    background-color: #152259;
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 24px;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    padding: 23px 29px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+  }
+  .dashboard{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+  .admin{
+    display: block;
+    padding-left:500px;
+    padding-top: 20px;
+    
+  }
+  .tittle-nav{
+    color: rgb(23, 8, 98);
+    padding-left: 50%;
+    padding-top: 15px;
+    font-size: 25px;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #3b9fc4;
+    padding: 7px;
+    border-radius: 3px;
+  }
+  
+  /* Active link styling */
+  .nav-links li a.active {
+    background-color: #6ec7dd;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  /* Home section styling */
+  .home-section {
+    flex-grow: 1; /* Takes up the remaining space */
+    padding: 50px; /* Adjust as needed */
+    transition: margin-left 0.3s ease; /* Smooth transition for margin adjustment */
+  }
+  
+
+  
+  /* Style for the toggle button */
+ .navbar2{
+  display: flex;
+  font-size: 20px;
+ }
+  
+  
+  
+  #white-text {
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+td {
+  background-color: #f2f2f2;
+}
+.checkbox{
+  width: 60px;
+  height: 23px;
+}
+
+/* Existing styles... */
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .img-res{
+    padding-left: 33% !important;
+  }
+.card{
+  height: 22rem !important;
+}
+  .sidebar {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+    top: 80px; /* Ensures sidebar is above other content */
+  }
+
+  .sidebar.closed {
+    width: 0;
+  }
+ .navbar1{
+  top: 30px;
+  background-color: #152259;
+ }
+  .home-section {
+    margin-top: 10px; /* Adjust depending on the actual height of your sidebar */
+    padding: 0px; /* Adjust padding for smaller screens */
+  }
+  .nav-links{
+    padding-top: 80px;
+  }
+
+  .nav-links li a {
+    font-size: 16px; /* Smaller font size for navigation links */
+  }
+
+  .nav-links img {
+    width: 50px; /* Adjust image sizes within the navigation links */
+    height: 50px;
+  }
+
+  .home-content .card {
+   /* Adjust card width */
+    margin: 10px 0px 0px 0px; /* Center the cards with auto margins */
+  }
+  .card-body{
+    margin: 0%;
+  }
+  .home-content .overview-boxes {
+    justify-content: center; /* Center items for better alignment on small screens */
+    padding: 0 34px; /* Reduce padding for smaller screens */
+    gap: 10px; /* Add some space between wrapped items */
+  }
+
+  .home-content .overview-boxes .box {
+    width: 100%; /* Make each box full width for better visibility */
+    margin-bottom: 15px; /* Add some space between the boxes */
+  }
+  .card{
+    margin: 0%;
+  }
+  .img-card{
+    padding: 0px;
+  }
+  .container{
+    padding: 0%;
+  }
+  
+
+
+  .sales-boxes .box {
+    /* Adjust the styling of boxes in the sales section */
+  }
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto; /* Allows table to be scrollable horizontally */
+    }
+  
+    th{
+      padding: 12px; /* Slightly reduce padding for smaller screens */
+      font-size:17px; /* Adjust font size for readability */
+    }
+    td {
+      padding: 18px;
+      font-size: 13px;
+    }
+  
+    .checkbox {
+      width: 50px; /* Adjust checkbox size for smaller screens */
+      height: 20px;
+    }
+  
+    /* Additional responsive adjustments as needed */
+  }
+  .navbar2 {
+    display: block;
+    /* Adjustments for smaller screens */
+    height: auto; /* Example: Change height */
+    padding: 7px; /* Example: Add padding */
+  }
+
+  
+  .navbar2 .dashboard,
+  .navbar2 .admin {
+    display:none;
+    /* Smaller font size for icons and text */
+  }
+
+  .navbar2 .admin-icon {
+    width: 40px;
+    height: 36px;
+    /* Adjust icon size */
+  }
+  .dashboard {
+    gap: 0.5rem; /* Reduce gap for smaller screens */
+    padding-top: 10px; /* Adjust padding */
+    /* Additional responsive adjustments as needed */
+  }
+  .tittle-nav{
+    display: none;
+  }
+
+  .admin {
+    padding-left: 10px; /* Significantly reduce padding for smaller screens */
+    padding-top: 10px;
+    font-size: 14px; /* Optional: Adjust font size if necessary */
+    /* You may also consider changing display to flex or grid for better alignment */
+  }
+  .logo_name{
+    width: 100px;
+    height: 100px;
+  }
+  .logo-details{
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Other responsive adjustments as needed */
+}
+

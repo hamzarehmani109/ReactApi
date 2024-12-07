@@ -1,0 +1,72 @@
+/* SettingForm.css */
+.login-box2 {
+    width: 1020px;
+    padding: 40px;
+    position: absolute;
+    top: 455px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #152259;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(241, 240, 240, 0.2);
+}
+
+h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fafafa;
+}
+
+.user-box2 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-box2 input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    color: #000000;
+    font-size: 16px;
+}
+
+.user-box2 label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box2 input:focus ~ label,
+.user-box2 input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #152259;
+    font-size: 12px;
+}
+
+.error {
+    color: #e91e63;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.btn2 {
+    background: #03e9f4;
+    color: #fff;
+    box-shadow: -1 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+                width: 90px;
+                height: 50px;
+}
+
+.btn2:hover {
+    background: #333;
+}
